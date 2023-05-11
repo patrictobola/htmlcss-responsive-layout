@@ -65,6 +65,9 @@ header {
   text-align: center;
   color: black;
 }
+.planning-section img {
+  width: 100%;
+}
 
 /* ! Utilities  */
 .flex {
@@ -83,14 +86,15 @@ header {
 /* ! Responsive  */
 
 @media screen and (min-width: 768px) {
-  /* Card Section  */
-  .col-lg {
+  /* * Card Section  */
+  .card-section .card-lg {
     flex-basis: calc(2 * (100% / 3 - (25px / 5)));
   }
-  .col {
+  .card-section .card {
     flex-basis: calc(100% / 3 - (25px * 2 / 3));
   }
-  /* Utilities  */
+
+  /* * Utilities  */
   .container {
     width: 90%;
     margin: 0 auto;
@@ -98,6 +102,29 @@ header {
 }
 
 @media screen and (min-width: 992px) {
+  /* * Planning section  */
+
+  .plan {
+    display: flex;
+    width: 100%;
+    padding: 0 200px;
+    position: relative;
+  }
+  .plan .image-and-description,
+  .plan .image,
+  .plan .card {
+    width: 400px;
+  }
+  .plan img {
+    width: 100%;
+    display: block;
+  }
+  .plan .card {
+    height: 200px;
+    position: relative;
+    bottom: 0;
+    right: 0;
+  }
   /* Utilities  */
   .container {
     max-width: 1200px;
