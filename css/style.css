@@ -30,7 +30,6 @@ header {
   height: 100%;
   justify-content: space-between;
   align-items: center;
-  padding: 0 30px;
 }
 
 /* ! Main */
@@ -53,6 +52,7 @@ header {
   margin: 0 auto;
   background-color: lightseagreen;
 }
+
 /* ! Utilities  */
 .flex {
   display: flex;
@@ -60,4 +60,29 @@ header {
 .container {
   width: 85%;
   margin: 0 auto;
+}
+
+/* ! Responsive  */
+
+@media screen and (min-width: 768px) {
+  /* Card Section  */
+  .col-lg {
+    flex-basis: calc(2 * (100% / 3 - (25px / 5)));
+  }
+  .col {
+    flex-basis: calc(100% / 3 - (25px * 2 / 3));
+  }
+  /* Utilities  */
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  /* Utilities  */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 }
