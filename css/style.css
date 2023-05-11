@@ -129,6 +129,16 @@ header {
   .benefits .card {
     flex-basis: calc(50% - (25px / 2));
   }
+  /* * About us  */
+  .about-us {
+    display: flex;
+  }
+  .about-us .description {
+    flex-basis: 55%;
+  }
+  .about-us .ceo-profile {
+    flex-basis: 45%;
+  }
 }
 
 /* ++++++++++++++ */
@@ -162,6 +172,15 @@ header {
   /* * Benefits section  */
   .benefits .card {
     flex-basis: calc(100% / 3 - (25px * 2 / 3));
+  }
+
+  /* * About us  */
+
+  .about-us .description {
+    flex-basis: 70%;
+  }
+  .about-us .ceo-profile {
+    flex-basis: 30%;
   }
 
   /* Utilities  */
