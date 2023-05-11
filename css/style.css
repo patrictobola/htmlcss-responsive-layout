@@ -1,3 +1,13 @@
+/* Root  */
+:root {
+  --blue: #0084fd;
+  --lightblue: #b5ddff;
+  --purple: #9792e4;
+  --gray: #5a6e7f;
+  --yellow: #fdc15f;
+  /* Footer color #333  */
+}
+
 /* Reset  */
 * {
   margin: 0;
