@@ -30,6 +30,23 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+.nav-bar-right i {
+  color: white;
+  font-size: 1.5rem;
+}
+/* Desktop nav bar  */
+.nav-menu {
+  display: none;
+}
+
+.nav-menu li {
+  list-style-type: none;
+}
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 0 10px 30px;
+}
 
 /* ! Main */
 
@@ -181,6 +198,15 @@ footer {
 /* DESKTOP  */
 
 @media screen and (min-width: 992px) {
+  /* * Header  */
+
+  .burger {
+    display: none;
+  }
+  .nav-menu {
+    display: block;
+  }
+
   /* * Planning section  */
 
   .plan {
