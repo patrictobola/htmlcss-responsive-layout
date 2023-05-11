@@ -24,6 +24,7 @@ header {
   height: 80px;
   background-color: var(--blue);
   color: white;
+  margin-bottom: 50px;
 }
 .nav-bar {
   height: 100%;
@@ -32,10 +33,31 @@ header {
   padding: 0 30px;
 }
 
+/* ! Main */
+
+/* * Card section  */
+
+.row {
+  flex-wrap: wrap;
+  gap: 25px;
+}
+.col-lg {
+  flex-basis: 100%;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: lightseagreen;
+}
+.col {
+  flex-basis: 100%;
+  padding: 30px;
+  margin: 0 auto;
+  background-color: lightseagreen;
+}
 /* ! Utilities  */
 .flex {
   display: flex;
 }
 .container {
-  max-width: 1200px;
+  width: 85%;
+  margin: 0 auto;
 }
