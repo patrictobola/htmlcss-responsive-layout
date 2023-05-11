@@ -116,12 +116,19 @@ header {
     width: 90%;
     margin: 0 auto;
   }
-}
+  /* * Testimonial Section  */
 
-/* * Testimonial Section  */
+  .testimonial .card {
+    display: flex;
+  }
 
-.testimonial .card {
-  display: flex;
+  /* * Benefits section  */
+  .benefits .row {
+    flex-wrap: wrap;
+  }
+  .benefits .card {
+    flex-basis: calc(50% - (25px / 2));
+  }
 }
 
 /* ++++++++++++++ */
@@ -150,6 +157,11 @@ header {
     position: relative;
     bottom: 0;
     right: 0;
+  }
+
+  /* * Benefits section  */
+  .benefits .card {
+    flex-basis: calc(100% / 3 - (25px * 2 / 3));
   }
 
   /* Utilities  */
