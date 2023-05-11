@@ -24,7 +24,6 @@ header {
   height: 80px;
   background-color: var(--blue);
   color: white;
-  margin-bottom: 50px;
 }
 .nav-bar {
   height: 100%;
@@ -39,18 +38,32 @@ header {
 .row {
   flex-wrap: wrap;
   gap: 25px;
+  padding: 50px 0 70px 0;
 }
-.col-lg {
-  flex-basis: 100%;
-  margin: 0 auto;
+.card-section .card,
+.card-section .card-lg {
   padding: 30px;
+}
+.card-lg {
+  flex-basis: 100%;
+  /* TODO Remove  */
   background-color: lightseagreen;
 }
-.col {
+.card {
   flex-basis: 100%;
-  padding: 30px;
-  margin: 0 auto;
+  padding: 20px;
+  /* TODO remove */
   background-color: lightseagreen;
+}
+
+/* * planning section  */
+
+.planning-section {
+  color: white;
+}
+.planning-section .card {
+  text-align: center;
+  color: black;
 }
 
 /* ! Utilities  */
@@ -60,6 +73,11 @@ header {
 .container {
   width: 85%;
   margin: 0 auto;
+}
+.wrap {
+  width: 100%;
+  background-color: var(--purple);
+  padding: 70px 0;
 }
 
 /* ! Responsive  */
